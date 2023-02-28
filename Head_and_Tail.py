@@ -58,3 +58,8 @@ print("="*50)
 print("loc[[index0, index1],['column name1', 'column name2']] : 查詢特定範圍(index、colum name)的資料")
 print(my_table.loc[[0,2],["name","math"]])
 print("="*50)
+
+# # iloc[[index0:index1],[column index1, column index1]]
+print("iloc[[index0, index1],[column index1, column index1]] : 查詢特定範圍(index、colum index)的資料")
+print(my_table.iloc[[0,2],[0,1,2]])
+print("="*50)
