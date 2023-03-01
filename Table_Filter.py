@@ -37,3 +37,6 @@ print(Starbucks_Table.loc[filt, ['3. Are you currently....?', '5. How often do y
 print("="*50)
 
 # filter data with string and RegExp (regular expression)
+filt = (Starbucks_Table['3. Are you currently....?'].str.contains('ed', na= False))
+print("使用str.contains方法查詢特定欄位內有特定字串的所有資料")
+print(Starbucks_Table.loc[filt,['3. Are you currently....?','5. How often do you visit Starbucks?']])
